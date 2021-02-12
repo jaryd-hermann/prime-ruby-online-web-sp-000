@@ -1,4 +1,4 @@
 # Add  code here!
-def prime(array)
-  array.prime? { |num| array.prime?(num)}
+def prime(number)
+  number.prime?
 end
