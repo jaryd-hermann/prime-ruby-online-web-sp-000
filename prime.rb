@@ -1,9 +1,12 @@
-require 'prime'
-
-# Add  code here!
-def prime?(num)
-    (2..(num - 1)).each do |n|
-      return false if num % n == 0
-    end
-    true
+def prime?(number)
+  divisors = *(2..number - 1)
+  remainders = []
+  divisors.each do |divisor|
+    remainder = number % divisor
+    remainders << remainder
+end
+  if number > 1 then remainders. all? {|remainder| remainder != 0}
+  else
+    false
+  end
   end
