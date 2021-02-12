@@ -1,15 +1,9 @@
+require 'prime'
+
 # Add  code here!
-def prime?(number)
-  if nunber == 1
-  return true
-elsif number < 1
-  return false
-else
-for y in 2..(number-1)
-  if (number % y) == 0
-    return false
+def prime?(num)
+    (2..(num - 1)).each do |n|
+      return false if num % n == 0
+    end
+    true
   end
-end
-end
-true
-end
